@@ -23,7 +23,6 @@
 /*tarjetas*/
 
 @media(max-width: 1060px) {
-  
   .card {
     margin: 1%;
   }
@@ -91,7 +90,6 @@
 } 
 
 @media(max-width: 770px) {
-
   #footer .flex-wrap {
     display: block;
   }
@@ -114,7 +112,6 @@
 }
 
 @media(max-width: 750px) {
-
   #aside {
     margin-right: 15%;
   }
@@ -158,14 +155,17 @@
   }
 }
 
-@media(max-width: 380px) {
+@media(max-width: 382px) {
   #aside {
     margin-right: 4%;
   }
+  #banner {
+    height: auto;
+  }
+
 }
 
 @media(max-width: 405px) {
-
   .article__data {
     display: block;
     width: 35%;
