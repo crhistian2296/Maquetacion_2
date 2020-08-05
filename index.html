@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="es">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Maquetacion Responsive</title>
+    <meta name="description" content="" />
+
+    <!--responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--normalizado del navegador-->
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <!--estilos-->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!--estilos responsive-->
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <!--card__icono de la ventana-->
+    <link rel="icon" type="favicon/x-icon" href="img/supertux.png" />
+
+    <!--instalacion de fontawesome icons-->
+    <script
+      src="https://kit.fontawesome.com/6c57fa4615.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Google fonts: "Bebas Neue" "Roboto Slab"-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Inicino de la cabecera-->
+    <header id="header">
+      <div class="wrap">
+        <div id="logo">
+          <span id="gear">
+            <i class="fas fa-cog"></i>
+          </span>
+          <h3>BLOG</h3>
+        </div>
+        <nav id="menu">
+          <li><a href="#">INICIO</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">FORMACIÓN</a></li>
+          <li><a href="#">CONTACTO</a></li>
+        </nav>
+      </div>
+    </header>
+    <!--Fin de la cabecera-->
+
+    <!--Inicio del contenido principal-->
+    <section class="wrap">
+      <section id="info">
+        <!--Inicio del banner-->
+        <div id="banner">
+          <h1>
+            APRENDIENDO DESARROLLO WEB DE MANERA AUTODIDACTA
+          </h1>
+        </div>
+        <!--Fin del banner-->
+
+        <!--Inicio tarjetas-->
+        <div class="deck">
+          <div class="card">
+            <p class="card__icon-container">
+              <i class="card__icon fas fa-laptop-code"></i>
+            </p>
+            <h2 class="card__category">Desarrollo web</h2>
+            <p class="card__description">
+              Aprende los principales lenguajes para ser un web master.
+            </p>
+          </div>
+
+          <div class="card">
+            <p class="card__icon-container">
+              <div class="card__icon--terminal-background">
+                  <i class="card__icon--terminal fas fa-terminal"></i>
+              </div>
+              
+            </p>
+            <h2 class="card__category">Sistemas Operativos</h2>
+            <p class="card__description">
+              Aprende a administrar sistemas linux y windows.
+            </p>
+          </div>
+
+          <div class="card">
+            <p class="card__icon-container">
+              <i class="card__icon fas fa-cog"></i>
+            </p>
+            <h2 class="card__category">Hardware</h2>
+            <p class="card__description">Descubre los secretos del hardware.</p>
+          </div>
+
+          <div class="card">
+            <p class="card__icon-container">
+              <i class="card__icon fas fa-network-wired"></i>
+            </p>
+            <h2 class="card__category">Redes e Internet</h2>
+            <p class="card__description">
+              Aprende a configurar y administrar redes informáticas y servidores.
+            </p>
+          </div>
+
+          <div class="card">
+            <p class="card__icon-container">
+              <i class="card__icon fas fa-database"></i>
+            </p>
+            <h2 class="card__category">Bases de Datos</h2>
+            <p class="card__description">
+              Aprende a crear y administrar bases de datos.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--Fin tarjetas-->
+
+      <div class="clear-fixer"></div>
+
+      <!--Ininio barra lateral-->
+      <aside id="aside">
+        <div class="zone search__zone">
+          <h3 class="titulo">BUSCAR</h3>
+          <form>
+            <div class="search__text--container">
+              <input type="text" placeholder="Search" class="text__search">
+              <div class="search__button">
+                <a href="#">
+                  <i class="search__icon fas fa-search"></i>
+                </a>
+              </div>  
+            </div>
+          </form>
+        </div>
+
+        <div class="clear-fixer"></div>
+
+        <div class="zone login--zone">
+          <h3 class="titulo"> LOGIN</h3>
+          <form>
+            <div class="login__zone--container">
+              <div class="user__container">
+                <label class="login__logo"><i class="fas fa-user"></i></label>
+                <input type="email" class="login__text" placeholder="Email">
+              </div>
+  
+              <div class="password__container">
+                <label class="login__logo"><i class="fas fa-unlock"></i></label>
+                <input type="password" class="login__text" placeholder="Contraseña">
+              </div>
+  
+              <!--botones-->
+              <div class="login__buttons--container">
+                <input type="submit" class="login__button enter__button" value="Entrar">
+                <input type="reset" class="login__button clear__button" value="Limpiar">  
+              </div>
+              <!--links-->
+              <div class="login__links--container">
+                <a href="#" class="login__link">Registrate aquí</a>
+                <br/>
+                <a href="#" class="login__link">¿Has olvidado tu contraseña?</a>  
+              </div>  
+            </div>
+          </form>
+        </div>
+
+        <div class="zone social__zone">
+          <h3 class="titulo">REDES SOCIALES</h3>
+          <div class="social__logos--container">
+            <div class="social-network">
+              <a href="#" class="social__link">
+                <i class="social__logo fab fa-twitter"></i>
+              </a>
+              <p class="overlay">
+                Twitter
+              </p>
+            </div>
+            <div class="social-network">
+              <a href="#" class="social__link">
+                <i class="social__logo fab fa-google-plus-g"></i>
+              </a>
+              <p class="overlay">
+                Google
+              </p>
+            </div>
+            <div class="social-network">
+              <a href="#" class="social__link">
+                <i class="social__logo fab fa-facebook"></i>
+              </a>
+              <p class="overlay">
+                Facebook
+              </p>
+            </div>
+            <div class="social-network">
+              <a href="#" class="social__link">
+                <i class="social__logo fab fa-youtube"></i>
+              </a>
+              <p class="overlay">
+                Youtube
+              </p>
+            </div>  
+          </div>
+        </div>
+
+        <div class="zone sponsor-zone">
+          <h3 class="titulo">COLABORADORES</h3>
+          <div class="sponsors__logos">
+            <img src="img/apple.png" alt="apple" id="apple-logo" height="110px">
+            <img src="img/tesla.jpg" alt="tesla" id="tesla-logo" height="130px">
+            <img src="img/microsoft.jpg" alt="microsoft" id="microsoft-logo" height="70px">
+            <img src="img/google.png" alt="microsoft" id="google-logo" height="45px">
+          </div>
+        </div>
+      </aside>
+      <!--Fin Barra lateral-->
+
+      <!--Inicio de los articulos-->
+      <section class="articles">
+        <h2 class="titulo articles-section__title">Últimos artículos</h2>
+
+        <div class="clear-fixer"></div>
+
+        <article class="article">
+          <div class="article__data">
+            <span>Fecha: 14 de Julio</span>
+            <span>Categoría: pruebas</span>
+          </div>
+          <h4 class="article__title"><a href="#">Título del artículo</a></h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor reprehenderit mollitia sint esse voluptatem porro iste natus voluptates adipisci, ut fuga consequuntur reiciendis, suscipit aut voluptate minus eius. Amet exercitationem iure quia impedit dolorum praesentium fuga inventore ipsam ab! Dicta officia cum error autem at?. <a href="#" class="leer"> Leer más....</a>
+          </p>
+        </article>
+        
+        <article class="article">
+          <div class="article__data">
+            <span>Fecha: 14 de Julio</span>
+            <span>Categoría: pruebas</span>
+          </div>
+          <h4 class="article__title"><a href="#">Título del artículo</a></h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor reprehenderit mollitia sint esse voluptatem porro iste natus voluptates adipisci, ut fuga consequuntur reiciendis, suscipit aut voluptate minus eius. Amet exercitationem iure quia impedit dolorum praesentium fuga inventore ipsam ab! Dicta officia cum error autem at?. <a href="#" class="leer"> Leer más....</a>
+          </p>
+        </article>
+        
+        <article class="article">
+          <div class="article__data">
+            <span>Fecha: 14 de Julio</span>
+            <span>Categoría: pruebas</span>
+          </div>
+          <h4 class="article__title"><a href="#" >Título del artículo</a></h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor reprehenderit mollitia sint esse voluptatem porro iste natus voluptates adipisci, ut fuga consequuntur reiciendis, suscipit aut voluptate minus eius. Amet exercitationem iure quia impedit dolorum praesentium fuga inventore ipsam ab! Dicta officia cum error autem at?. <a href="#" class="leer"> Leer más....</a>
+          </p>
+        </article>
+        
+        <article class="article">
+          <div class="article__data">
+            <span>Fecha: 14 de Julio</span>
+            <span>Categoría: pruebas</span>
+          </div>
+          <h4 class="article__title"><a href="#">Título del artículo</a></h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor reprehenderit mollitia sint esse voluptatem porro iste natus voluptates adipisci, ut fuga consequuntur reiciendis, suscipit aut voluptate minus eius. Amet exercitationem iure quia impedit dolorum praesentium fuga inventore ipsam ab! Dicta officia cum error autem at?. <a href="#" class="leer"> Leer más....</a>
+          </p>
+        </article>
+        
+        <article class="article">
+          <div class="article__data">
+            <span>Fecha: 14 de Julio</span>
+            <span>Categoría: pruebas</span>
+          </div>
+          <h4 class="article__title"><a href="#">Título del artículo</a></h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor reprehenderit mollitia sint esse voluptatem porro iste natus voluptates adipisci, ut fuga consequuntur reiciendis, suscipit aut voluptate minus eius. Amet exercitationem iure quia impedit dolorum praesentium fuga inventore ipsam ab! Dicta officia cum error autem at?. <a href="#" class="leer"> Leer más....</a>
+          </p>
+        </article>
+        
+        <div id="blog__container">
+          <div id="blog">
+            <a href="#">Ir al Blog</a>
+          </div>
+        </div>
+      </section>
+      <!--Fin de los articulos-->
+
+    </section>
+    <!--Fin del contenido principal-->
+
+    <div class="clear-fixer"></div>
+
+
+    <!--Inicio del footer-->
+    <footer id="footer">
+      <div class="flex-wrap">
+        <div class="footer__element menu">
+          <h5 class="footer__title">MENÚ</h5>
+          <ul>
+            <li><a href="#">INICIO</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">INFORMACION</a></li>
+            <li><a href="#">CONTACTO</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__element location">
+          <h5 class="footer__title">¿Dónde estamos?</h5>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3033.185158059575!2d-3.8995838850636506!3d40.51539835755753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4183308ccb3d53%3A0x3792eff30875d900!2sTaco%20Bell!5e0!3m2!1ses-419!2sco!4v1594880115353!5m2!1ses-419!2sco" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" id="map"></iframe>
+        </div>
+
+        <div class="footer__element comunication">
+          <h5 class="footer__title">Desarrollado con:</h5>
+          <figure><img src="img/html5-badge-h-css3-graphics-multimedia-performance-semantics.png" alt="HTML5"></figure>
+
+          <h5 class="footer__title">Optimizado para:</h5>
+          <picture id="browsers">
+            <img src="img/firefox-icon.png" alt="firefox">
+            <img src="img/chrome.png" alt="chrome">
+            <img src="img/Opera_256x256.png" alt="opera">
+            <img src="img/safari.png" alt="safari">
+            <img src="img/android.png" alt="android">
+            <img src="img/ios.png" alt="ios">
+          </picture>
+
+          <h5 class="footer__title">Autor</h5>
+          <p>&copy; Crhistian Alexander Garcia</p>
+        </div>
+      </div>
+    </footer>
+    <!--Fin del footer-->
+  </body>
+</html>
