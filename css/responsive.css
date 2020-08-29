@@ -131,6 +131,36 @@
   }
 } 
 
+@media(max-width: 515px){
+  .card:hover .card__icon,
+  .card:hover .card__icon--terminal-background{
+  display: none;
+  background-color: black;
+  }
+
+  .card__icon,
+  .card__icon--terminal-background {
+    text-align: center;
+    transform: scale(0.5, 0.5);
+    margin: 0px;
+  }
+
+  .card__icon-container {
+  }
+
+  .card {
+    height: 70px;
+    line-height: 0;
+  }
+
+  .card:hover {
+    background-color: white;
+  }
+
+  .card__category{
+    display: none;
+  }
+}
 
 @media(max-width: 452px) {
   #logo {
